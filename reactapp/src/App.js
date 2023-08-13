@@ -10,7 +10,7 @@ const [qsnAttempt, setqsnAttempt] = useState(0);
 const [card, setCard] = useState(false);
 const [result, setResult] = useState(false)
 const [banner,setBanner] = useState(false)
-// Event handler to start the Quiz
+
 const handleStart = () => {
 setStart(false)
 setCard(true)
@@ -18,12 +18,11 @@ correctAnswerMarkUpdate(0)
 setqsnAttempt(0)
 setBanner(false)
 }
-// Options for the quiz
-const opt = {
-option1 : "Blue",option2 : "Red",option3 : "Yellow",option4 :"Green"}
-// Array of questions
+
+const opt = {option1 : "Blue",option2 : "Red",option3 : "Yellow",option4 :"Green"}
+
 const questions = [ { question: "What color are the leaves?",answer:"Green" }, { question: "What color is the sky?", answer: "Blue"}, {question: "What color is a banana?", answer: "Yellow" }, { question:"What coloris a strawberry?", answer: "Red" }, { question: "What color is a watermelon?", answer: "Green" } ];
-// Event handler to show the result of the Quiz
+
 const handleResult = () => {
 setStart(true)
 setBanner(true)
